@@ -1,0 +1,22 @@
+body{margin: 0;}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    top: 0;
+    width: 100;
+    position: fixed;
+    background-color:#607D8B;
+    display: flex;
+}
+a{
+    text-decoration: none;
+padding: 20px;
+color: black;
+display: block;
+text-align: center;
+}
+a:hover{
+    background-color: green;
+}
