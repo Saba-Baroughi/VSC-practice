@@ -1,0 +1,119 @@
+body{
+    box-sizing: border-box;
+    font-family: Arial;
+    
+}
+.container{
+    background-color: #f1f1f1;
+    width: 1280px;
+    display: flex;
+    height: 1000px;
+    margin: -10px;
+}
+h1{
+    font-family: Arial;
+    font-size: 56px;
+    padding-top: 170px;
+    padding-left: 120px;
+    color: #1E88E5;
+}
+.left-col p{
+    font-family: Arial;
+    margin-left: 120px;
+    font-size: 28px;
+    margin-top: -28px;
+}
+.section1{
+   margin-right: 150px;
+   background-color: #fff;
+   border: 1px solid #fafafa;
+   border-radius: 10px;
+   margin-top: 130px;
+   height: 300px;
+   width: 400px;
+   text-align: center;
+   margin-left: 100px;
+   box-shadow:1px 1px 10px;
+   padding: 15px;
+}
+#email{
+    width:90%;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    outline-color:#1E88E5;
+   
+}
+#pass{
+    width:90%;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 10px;
+    outline-color: #1E88E5;
+}
+
+.log-in{
+    background-color: #1E88E5;
+    width: 98%;
+    font-size: 22px;
+    
+    border-radius: 10px;
+    height: 50px;
+    outline-color: none;
+    border: none;
+    outline: none;
+}
+#log-in-a{
+    text-decoration: none;
+    color: #fff;
+   padding: 8px;
+}
+
+#section1-a{
+    text-decoration: none;
+    color: #1E88E5;
+    font-size: 14px;
+}
+#section1-a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.section-line{
+    width: 96%;
+    height: 1px;
+    background-color: grey;
+    display: block;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.new-account{
+    background-color:#64DD17;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 50%;
+    height: 50px;
+    font-size: 18px;
+}
+.new-account:hover{
+  background-color: #388E3C;
+  cursor: pointer;
+}
+.section2{
+    text-align: center;
+    font-size: 14px;
+}
+#section2-a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#section2-a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
