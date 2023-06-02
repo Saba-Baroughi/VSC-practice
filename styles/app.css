@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial;
+}
+container1{
+    background-image: url(../images/live-1.jpg)
+    
+}
+span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.section1{
+    Margin-top: 40px;
+    margin-left: 60px;
+    
+}
+.section1-1{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+.section1-1::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 200px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+}
