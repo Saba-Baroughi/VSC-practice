@@ -3,19 +3,22 @@
     margin: 0;
     font-family: Arial;
 }
-container1{
-    background-image: url(../images/live-1.jpg)
-    
+.container1{
+    background-image: url(../images/live-1.jpg);
+    width: 1280px;
+    height: 1100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    top: 0;
 }
 span{
     font-weight: bold;
-    font-size: 18px;
-}
+    font-size: 18px;}
 .section1{
-    Margin-top: 40px;
-    margin-left: 60px;
-    
-}
+     padding-top: 40px;
+     padding-left: 60px;
+    color: #fff;}
 .section1-1{
     position: relative;
     display: inline-block;
