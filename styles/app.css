@@ -3,7 +3,7 @@
     margin: 0;
     font-family: Arial;
 }
-.container1{
+.navbar-header{
     background-image: url(../images/live-1.jpg);
     width: 1280px;
     height: 1100px;
@@ -11,14 +11,38 @@
     background-size: 100%;
     margin: 0;
     top: 0;
+    
+}
+.menu{
+      position:fixed;
+      background-color: #fff;
+      width: 100%;
+      height: 70px;
+      display: block;
 }
 span{
     font-weight: bold;
     font-size: 18px;}
 .section1{
-     padding-top: 40px;
-     padding-left: 60px;
-    color: #fff;}
+     text-align: left;
+    padding-top: 25px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.navbar-item{
+    width: 22px;
+    height: 2px;
+    background-color: #37474F;
+    margin: 3px;
+    border-radius: 3px;
+}
+.navbar{
+    padding-top: 25px;
+    padding-right: 20px;
+    text-align: right;
+    
+}
 .section1-1{
     position: relative;
     display: inline-block;
@@ -29,11 +53,36 @@ span{
     content: "";
     width: 5px;
     height: 5px;
-    background-color: red;
+    background-color: rgb(207, 11, 11);
     border-radius: 200px;
     display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: -10px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar:hover{
+    cursor: pointer;
+}
+.navbar-collapse-1-First{
+    
+   text-decoration: none;
+   text-align: center;
+   display: block;
+   position: relative; /* Changed to relative */
+   list-style-type: none;
+   margin: 0 auto; /* Added margin property */
+   transform: translateX(-50%); /* Added transform property */
+   left: 50%;
+   top: 100px;
+}
+.list-item1{
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color:#616161 ;
 }
