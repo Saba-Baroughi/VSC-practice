@@ -270,6 +270,7 @@ img{
     position: relative;
     height: 600px;
     width: 470px;
+    margin: 0 auto;
    
 }
 .team-item{
@@ -289,6 +290,7 @@ img{
     display: block;
     background-color: #424242;
     opacity: 0.8;
+    /* transform: translateY(0%); */
 }
 .team-hover-div-img{
     width:470px;
