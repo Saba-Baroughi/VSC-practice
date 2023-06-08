@@ -238,14 +238,17 @@ img{
     margin: 0 auto;
     text-align: center;
     display: block;
-    height: 400px;
+    height: 300px;
     width: 500px;
 }
 .third-page{
-    margin-left: 50px
+    margin-left: 50px;
+    background-color: #fafafa;
+    margin-bottom: 40px;
 }
 .text-section{
     text-align: center;
+    padding-top: 30px;
 }
 .text-section p{
     color: #9E9E9E;
@@ -271,26 +274,28 @@ img{
     height: 600px;
     width: 470px;
     margin: 0 auto;
-   
+    
 }
 .team-item{
     position:absolute;
     height: 100%;
     width: 100%;
     text-align: center;
-    display: none;
+    opacity: 0;
     transform: translateY(-100%);
-    transition: 1.5s all;
+    transition:all 1.5s;
 }
-
+.team-hover img{
+    transition: all 1.5s;
+}
 .team-hover:hover img{
     transform: scale(1.2);
 }
 .team-hover:hover .team-item{
-    display: block;
-    background-color: #424242;
+    
+    background-color: #2e2e2e;
     opacity: 0.8;
-    /* transform: translateY(0%); */
+    /* transform: translateY(0); */
 }
 .team-hover-div-img{
     width:470px;
@@ -307,6 +312,7 @@ img{
     padding-top: 250px;
     padding-left: 60px;;
     padding-right: 60px;
+    color: #fff;
 }
 .envelope-1{
     color: #fff;
@@ -314,6 +320,7 @@ img{
 .linkedin-1{
     color: #fff;
 }
+
 .social-icon li{
     border-radius: 200px;
 }
@@ -328,3 +335,70 @@ img{
     background-color: #E64A19;
 }
 
+    
+/* .foodmenus{
+    width: 100%;
+} */
+.forth-page-section{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.forth-page-section p{
+    font-size: 11px;
+    color:#9E9E9E;
+    margin: 10px;
+    font-weight: bold;
+}
+/* .dishes-div-image{
+    width: 700px;
+    height: 300px;
+} */
+.dishes-div-image img{
+    width: 100%;
+    transition: all 1.5s;
+}
+.dishes-hover{
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+}
+.dishes{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.dishes-hover{
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 1.5s;
+}
+.dishes-hover-text{
+    padding: auto 10px;
+}
+.dishes:hover{
+    cursor: pointer;
+}
+.dishes:hover .dishes-hover{
+    background-color: #2e2e2e;
+    opacity: 0.8;
+}
+.dishes-text2{
+   
+    margin: auto 10px;
+}
+.dishes-text2 h5{
+    font-size: 26px;
+    font-weight: bold;
+}
+.dishes-text2 p{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px;
+}
+.dishes:hover img{
+    transform: scale(1.2);
+}
