@@ -455,6 +455,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 400px;
   }
   
   .dots .dot {
@@ -467,9 +468,10 @@ img{
   }
   .animation-section {
     position: relative;
+
   }
-    
-    
+
+
 
 
 .animation-section > *{
