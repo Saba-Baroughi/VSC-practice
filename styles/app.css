@@ -3,6 +3,12 @@
     margin: 0;
     font-family: Arial;
 }
+.container{
+    margin: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
 .navbar-header{
     
     width: 1280px;
@@ -336,8 +342,9 @@ img{
 }
 
     
-/* .foodmenus{
+/* .forth-page{
     width: 100%;
+    margin: 0;
 } */
 .forth-page-section{
     text-align: center;
@@ -350,13 +357,15 @@ img{
     margin: 10px;
     font-weight: bold;
 }
-/* .dishes-div-image{
-    width: 700px;
-    height: 300px;
-} */
+.dishes-div-image{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
 .dishes-div-image img{
     width: 100%;
     transition: all 1.5s;
+    height: 400px;
 }
 .dishes-hover{
     display: flex;
@@ -366,11 +375,11 @@ img{
 .dishes{
     position: relative;
     width: 100%;
-    height: 300px;
+
 }
 .dishes-hover{
     position: absolute;
-    height: 30%;
+    height: 100px;
     width: 100%;
     opacity: 0;
     transform: translateY(-100%);
@@ -388,7 +397,7 @@ img{
 }
 .dishes-text2{
    
-    margin: auto 10px;
+    margin: auto 20px;
 }
 .dishes-text2 h5{
     font-size: 26px;
@@ -399,6 +408,13 @@ img{
     font-weight: bold;
     margin: 8px;
 }
+.dishes-text1{
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    margin: auto 15px;
+}
 .dishes:hover img{
     transform: scale(1.2);
 }
+
