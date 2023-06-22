@@ -260,7 +260,7 @@ body {
   text-decoration: none;
   background-color: #2f5bea;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   padding: 0.8rem 1.5rem;
 }
 /* header-bottom */
@@ -301,7 +301,7 @@ body {
   text-decoration: none;
   font-family: TTNorms;
   font-size: 11px;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   margin-right: 1rem;
   text-align: center;
 }
@@ -315,7 +315,7 @@ body {
   text-decoration: none;
   font-family: TTNorms;
   font-size: 11px;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
 }
 .header-content-image {
   width: 100%;
@@ -323,12 +323,12 @@ body {
 /* Main */
 .works {
   text-align: center;
-  padding-bottom: 2rem;
+  padding: 5rem 0;
 }
 .works-text,
 .portfolio-text {
   color: #6c7890;
-  margin-top: 5rem;
+  margin-top: 0;
 }
 .works-title,
 portfolio-title {
@@ -362,17 +362,20 @@ portfolio-title {
 .person-comments {
   background-color: #2f5bea;
   text-align: center;
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 .person-comments-title {
-  font-family: "TTNorms Medium";
+  font-family: "TTNorms";
   color: #fff;
   font-weight: normal;
+  margin-top: 0;
 }
 .person-comments-text {
-  /* font-family: "TTNorms Light"; */
   color: #fff;
   font-size: 0.8rem;
+  max-width: 28rem;
+  margin: 0 auto;
+  font-size: medium;
 }
 .comments-container {
   max-width: 60rem;
@@ -388,7 +391,7 @@ portfolio-title {
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   margin: 1rem;
   min-height: 17rem;
   flex-basis: 18rem;
@@ -411,8 +414,7 @@ portfolio-title {
 .comment-img {
   margin: 1.2rem;
 }
-.comment-person {
-}
+
 .companies {
   display: flex;
   justify-content: space-between;
@@ -426,7 +428,7 @@ portfolio-title {
 /* Portfolio section */
 .portfolio {
   text-align: center;
-  padding-bottom: 5rem;
+  padding: 5rem 0;
 }
 .portfolio-items {
   display: flex;
@@ -440,8 +442,54 @@ portfolio-title {
 }
 .portfolio-image {
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
 }
+/* Footer */
+.footer {
+  background-color: #2c57e4;
+}
+.newsletter {
+  display: flex;
+  padding: 6rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.newsletter-text {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+.newsletter-email {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 20rem;
+  padding: 0.2rem;
+}
+.newsletter-input {
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+}
+.newsletter-btn {
+  display: flex;
+  padding: 1rem 1.5rem;
+  background-color: #2c57e4;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.copy-right {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  align-items: center;
+}
+
 /* Project Responsive */
 
 @media only screen and (max-width: 1200px) {
