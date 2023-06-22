@@ -5,7 +5,7 @@
   src: url("../project/fonts/TTNorms-Regular.otf") format("openType");
 }
 @font-face {
-  font-family: TTNorms Medium;
+  font-family: "TTNorms Medium";
   src: url("../project/fonts/TTNorms-Medium.otf") format("openType");
 }
 @font-face {
@@ -320,7 +320,128 @@ body {
 .header-content-image {
   width: 100%;
 }
+/* Main */
+.works {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.works-text,
+.portfolio-text {
+  color: #6c7890;
+  margin-top: 5rem;
+}
+.works-title,
+portfolio-title {
+  font-weight: normal;
+  color: #081d43;
+}
+.works-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  font-family: TTNorms medium;
+}
 
+.works-content-title {
+  color: #081d43;
+  font-weight: normal;
+}
+.works-content-text {
+  color: #6c7890;
+  line-height: 2rem;
+  max-width: 16rem;
+}
+.works-image {
+  max-width: 31rem;
+  margin: 0 auto;
+}
+.works-image-image {
+  width: 100%;
+}
+/* comments */
+.person-comments {
+  background-color: #2f5bea;
+  text-align: center;
+  padding: 2rem 0;
+}
+.person-comments-title {
+  font-family: "TTNorms Medium";
+  color: #fff;
+  font-weight: normal;
+}
+.person-comments-text {
+  /* font-family: "TTNorms Light"; */
+  color: #fff;
+  font-size: 0.8rem;
+}
+.comments-container {
+  max-width: 60rem;
+  margin: 3.5rem auto 0 auto;
+}
+.comments {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  min-height: 17rem;
+  flex-basis: 18rem;
+}
+.comment-content {
+  padding: 0.8rem 1.2rem;
+}
+.comment-body {
+  font-family: "Times Roman Italic";
+  color: #7e8085;
+  text-align: left;
+  line-height: 1.5rem;
+  margin: 0;
+}
+.comment-info {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid grey;
+}
+.comment-img {
+  margin: 1.2rem;
+}
+.comment-person {
+}
+.companies {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  flex-wrap: wrap;
+  margin-top: 7rem;
+}
+.company {
+  display: block;
+}
+/* Portfolio section */
+.portfolio {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.potfolio-item {
+  flex-basis: 20rem;
+  margin-bottom: 2rem;
+}
+.portfolio-image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
 /* Project Responsive */
 
 @media only screen and (max-width: 1200px) {
