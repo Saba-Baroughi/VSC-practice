@@ -263,16 +263,22 @@ body {
   border-radius: 0.3rem;
   padding: 0.8rem 1.5rem;
 }
+.header-icon {
+  font-size: 1.6rem;
+  display: none;
+  cursor: pointer;
+}
 /* header-bottom */
 .header-content {
   display: flex;
   margin-top: 6rem;
+  align-items: center;
 }
 .header-content-left {
   flex-basis: 50%;
 }
 .header-content-wrapper {
-  width: 27rem;
+  max-width: 27rem;
 }
 .header-content-right {
   flex-basis: 50%;
@@ -331,9 +337,10 @@ body {
   margin-top: 0;
 }
 .works-title,
-portfolio-title {
+.portfolio-title {
   font-weight: normal;
   color: #081d43;
+  font-size: 1.8rem;
 }
 .works-content {
   display: flex;
@@ -369,6 +376,7 @@ portfolio-title {
   color: #fff;
   font-weight: normal;
   margin-top: 0;
+  font-size: 1.8rem;
 }
 .person-comments-text {
   color: #fff;
@@ -496,11 +504,33 @@ portfolio-title {
   .container {
     max-width: 960px;
   }
+  .header__link {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .container {
     max-width: 720px;
+  }
+  .header-icon {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    background-color: blueviolet;
+    top: 0;
+    bottom: 0;
+    left: -256px;
+    flex-direction: column;
+    width: 15rem;
+    padding: 2rem 1rem;
+    transition: 0.3s all;
+  }
+
+  .menu-item {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
   }
 }
 
