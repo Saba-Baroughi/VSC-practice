@@ -220,8 +220,8 @@ body {
   max-width: 80rem;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 8rem;
-  padding-left: 8rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 /* Project style */
 /* header-top */
@@ -264,7 +264,7 @@ body {
   padding: 0.8rem 1.5rem;
 }
 .header-icon {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   display: none;
   cursor: pointer;
 }
@@ -347,8 +347,12 @@ body {
   justify-content: space-around;
   margin-top: 3rem;
   font-family: TTNorms medium;
+  flex-wrap: wrap;
 }
-
+.works-content-item {
+  flex-basis: 16rem;
+  flex-shrink: 0;
+}
 .works-content-title {
   color: #081d43;
   font-weight: normal;
@@ -386,13 +390,12 @@ body {
   font-size: medium;
 }
 .comments-container {
-  max-width: 60rem;
+  max-width: 65rem;
   margin: 3.5rem auto 0 auto;
 }
 .comments {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .comment {
   display: flex;
@@ -426,12 +429,12 @@ body {
 .companies {
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
   flex-wrap: wrap;
   margin-top: 7rem;
 }
 .company {
   display: block;
+  margin: 1rem;
 }
 /* Portfolio section */
 .portfolio {
@@ -445,7 +448,7 @@ body {
   margin-top: 5rem;
 }
 .potfolio-item {
-  flex-basis: 20rem;
+  flex-basis: 23rem;
   margin-bottom: 2rem;
 }
 .portfolio-image {
@@ -480,6 +483,7 @@ body {
   outline: none;
   border: none;
   border-radius: 0.3rem;
+  width: 100%;
 }
 .newsletter-btn {
   display: flex;
@@ -496,6 +500,7 @@ body {
   justify-content: space-between;
   padding: 1rem 0;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /* Project Responsive */
@@ -504,8 +509,8 @@ body {
   .container {
     max-width: 960px;
   }
-  .header__link {
-    display: none;
+  .potfolio-item {
+    flex-basis: 28rem;
   }
 }
 
@@ -513,12 +518,57 @@ body {
   .container {
     max-width: 720px;
   }
+  .header__link {
+    display: none;
+  }
+  .header-bottom {
+    margin-top: 3rem;
+  }
+  .header-content {
+    flex-direction: column-reverse;
+  }
+  .header-content-wrapper {
+    max-width: 100%;
+  }
+  .header-content-right {
+    margin-bottom: 3rem;
+  }
+  .header-content-links {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .header-content-link {
+    margin-bottom: 1rem;
+  }
+  .comments {
+    flex-wrap: wrap;
+  }
+  .comment {
+    flex-basis: 19rem;
+  }
+  .companies {
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+  .potfolio-item {
+    flex-basis: 20rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
   .header-icon {
     display: block;
   }
+
+  .menu__link {
+    color: #fff;
+  }
   .menu {
     position: fixed;
-    background-color: blueviolet;
+    background-color: rgb(15, 8, 209);
     top: 0;
     bottom: 0;
     left: -256px;
@@ -527,21 +577,51 @@ body {
     padding: 2rem 1rem;
     transition: 0.3s all;
   }
-
   .menu-item {
     margin-bottom: 2rem;
     font-size: 1.2rem;
   }
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 540px;
+  .works-content-item {
+    flex-basis: 14rem;
+    margin-bottom: 2rem;
+  }
+  .comment {
+    flex-basis: 15rem;
+    margin: 0 0 1.5rem 0;
+  }
+  .potfolio-item {
+    flex-basis: 100%;
+  }
+  .newsletter-text {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  .newsletter {
+    flex-direction: column;
+  }
+  .newsletter-email {
+    flex-basis: auto;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .container {
     max-width: 100%;
+  }
+  .works-content-item {
+    flex-basis: 100%;
+  }
+  .works-content-text {
+    max-width: 100%;
+  }
+  .comment {
+    flex-basis: 100%;
+  }
+  .companies {
+    flex-direction: column;
+  }
+  .newsletter-btn {
+    padding: 1rem 1.2rem;
   }
 }
