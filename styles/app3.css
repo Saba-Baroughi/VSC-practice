@@ -228,20 +228,28 @@ body {
 .header {
   background-image: url(../images/live-1.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 .header-wrapper {
-  margin: 2rem 6rem;
+  margin: 2rem 0rem;
   font-weight: bold;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 .nav {
+  color: black;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.nav-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: black;
-  position: fixed;
+  margin: 0.5rem 5rem;
 }
 .nav-logo {
   display: flex;
@@ -279,15 +287,30 @@ body {
   color: #fff;
   padding: 1rem 2rem;
   font-size: 1.2rem;
+  outline: 0;
 }
 .nav-bottom {
+  margin: 2rem 0;
 }
+
 .nav-bottom-content {
-  padding: 6rem;
+  margin: 14rem 6rem;
+  color: #fff;
 }
 .nav-bottom-text {
+  font-size: 1.2rem;
 }
 .nav-bottom-heading {
+  margin: 2.5rem 0;
+  font-size: 3.5rem;
 }
 .nav-bottom-link {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: normal;
 }
