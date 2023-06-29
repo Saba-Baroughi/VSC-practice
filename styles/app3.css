@@ -1,0 +1,293 @@
+/* App Fonts */
+
+@font-face {
+  font-family: "TTnorms";
+  src: url("../project/fonts/TTNorms-Regular.otf") format("openType");
+}
+@font-face {
+  font-family: "TTNorms Medium";
+  src: url("../project/fonts/TTNorms-Medium.otf") format("openType");
+}
+@font-face {
+  font-family: "TTNorms Light";
+  src: url("../fonts/TTNorms-Light.otf") format("openType");
+}
+
+@font-face {
+  font-family: "Times Roman Italic";
+  src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
+}
+/* Normalize Css */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0; /* 3 */
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* Start Project */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "TTNorms";
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vw;
+  justify-content: space-between;
+}
+.main {
+  flex: 1;
+}
+/* header */
+.header {
+  background-image: url(../images/live-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.header-wrapper {
+  margin: 2rem 6rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  position: fixed;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.nav-logo-text {
+  font-size: 1.6rem;
+}
+.nav-logo-round {
+  width: 0.3rem;
+  height: 0.3rem;
+  background: red;
+  border-radius: 10rem;
+  margin: 0.8rem 0.4rem 0 0.4rem;
+}
+.nav-menu {
+  padding-left: 0;
+  display: flex;
+}
+.nav-manu-item {
+  list-style: none;
+  margin: 0 2rem;
+}
+.nav-reserve {
+  display: flex;
+  align-items: center;
+}
+.nav-reserve-text {
+  padding-right: 2rem;
+}
+.nav-reserve-link {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
+.nav-bottom {
+}
+.nav-bottom-content {
+  padding: 6rem;
+}
+.nav-bottom-text {
+}
+.nav-bottom-heading {
+}
+.nav-bottom-link {
+}
