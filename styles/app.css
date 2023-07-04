@@ -251,6 +251,7 @@ img {
 .team-hover img {
   height: 600px;
   width: 470px;
+  transition: all 1.5s;
 }
 .team-hover-name {
   text-align: center;
@@ -277,7 +278,6 @@ img {
   transition: all 1.5s;
 }
 .team-hover img {
-  transition: all 1.5s;
 }
 .team-hover:hover img {
   transform: scale(1.2);
