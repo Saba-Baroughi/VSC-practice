@@ -289,6 +289,11 @@ body {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   outline: 0;
+  transition: 0.4s;
+}
+.nav-reserve-link:hover {
+  cursor: pointer;
+  background-color: black;
 }
 /* head/nav-bottom */
 
@@ -388,8 +393,8 @@ body {
 }
 /* Main-meet-our-chefs */
 .meet {
-  background-color: #fafafa;
-  padding: 8rem 6rem 22rem 6rem;
+  background-color: #f7f3f3;
+  padding: 8rem 6rem 2rem;
 }
 
 .meet-text-section {
@@ -405,13 +410,14 @@ body {
 }
 .chefs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .chef {
+  flex-basis: 27rem;
 }
 .team-hover {
   position: relative;
-  width: 28rem;
+
   /* height: 30.2rem; */
 }
 .team-hover img {
@@ -485,4 +491,137 @@ body {
   font-size: 1rem;
   font-weight: bold;
   margin: 1rem;
+}
+/* main-ourmenus */
+.menus {
+  padding-top: 6rem;
+}
+.foodmenu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dishes {
+  position: relative;
+
+  flex-basis: 33.33%;
+  max-height: 24rem;
+}
+
+.dishes-div-image {
+  overflow: hidden;
+
+  height: 100%;
+}
+.dishes-div-image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s all;
+}
+.dishes-hover {
+  display: flex;
+  transition: 0.8s all;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  transform: translatey(-100%);
+  opacity: 0;
+  padding: 2.5rem;
+  color: #fff;
+}
+.dishes:hover .dishes-hover {
+  opacity: 0.8;
+  background-color: #2e2e2e;
+  /* transform: translatey(0); */
+}
+.dishes:hover {
+  cursor: pointer;
+}
+.dishes:hover img {
+  transform: scale(1.2);
+}
+.dishes-div-image {
+}
+
+.dishes-text2 h5 {
+  margin: 0;
+  font-size: 2rem;
+}
+.dishes-text2 p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.dishes-text1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* main-last-section */
+.Testim {
+  background-image: url(https://templatemo.com/templates/templatemo_515_eatery/images/testimonial-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8rem;
+  color: #fff;
+}
+.Testim h4 {
+  margin: 0 0 4rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+.animation-section {
+  text-align: center;
+  position: relative;
+}
+.animation-section p {
+  font-size: 1.5rem;
+
+  margin: 1.5rem 10rem;
+  line-height: 30px;
+}
+.animation-section div p {
+  font-size: 1rem;
+}
+.animation-section div span {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14rem;
+}
+
+.dots .dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: transparent;
+  border: 4px solid rgb(125, 122, 122);
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+.animation-section > * {
+  position: absolute;
+  visibility: hidden;
+  animation: 18s autoplay infinite;
+}
+@keyframes autoplay {
+  0% {
+    visibility: visible;
+  }
+  33.33% {
+    visibility: hidden;
+  }
+}
+.animation-section > *:nth-child(1) {
+  animation-delay: 0s;
+}
+.animation-section > *:nth-child(2) {
+  animation-delay: 6s;
+}
+.animation-section > *:nth-child(3) {
+  animation-delay: 12s;
 }
