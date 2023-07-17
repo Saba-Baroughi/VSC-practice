@@ -1,0 +1,30 @@
+.flex-practice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box {
+  background-color: plum;
+  height: 20rem;
+  margin: 1rem;
+}
+/* mobile */
+@media screen and (min-width: 300px) {
+  .box {
+    flex-basis: 100%;
+  }
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .box {
+    flex-basis: 45%;
+  }
+}
+
+/* desctop */
+
+@media screen and (min-width: 996px) {
+  .box {
+    flex-basis: 30%;
+  }
+}

@@ -218,7 +218,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 100vw;
+  min-height: 100vh;
   justify-content: space-between;
 }
 .main {
@@ -772,4 +772,33 @@ input {
 .footer-bottom-box4 a {
   text-decoration: none;
   color: #6c6c6c;
+}
+.footer-bottom-box4 a:hover {
+  color: red;
+}
+/* Project Responsive */
+@media only screen and (max-width: 1200px) {
+  .container-wrapper {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container-wrapper {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-wrapper {
+    max-width: 540px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container-wrapper {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 370px) {
 }
