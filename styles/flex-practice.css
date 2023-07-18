@@ -2,11 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 1rem;
 }
 .box {
   background-color: plum;
   height: 20rem;
-  margin: 1rem;
 }
 /* mobile */
 @media screen and (min-width: 300px) {
