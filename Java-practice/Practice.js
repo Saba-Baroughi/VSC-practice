@@ -1,11 +1,5 @@
-let age = prompt("how old are you?");
-
-let welcome =
-  age < 18
-    ? function () {
-        alert("hello");
-      }
-    : function () {
-        alert("greetings");
-      };
-welcome();
+function showTwoNumbers(firstNumber, secondNumber) {
+  alert("fisrt parameter:" + firstNumber);
+  alert("second Number:" + secondNumber);
+}
+showTwoNumbers(23, 34);
