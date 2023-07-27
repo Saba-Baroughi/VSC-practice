@@ -1,6 +1,7 @@
-function sumNumbers(num1, num2) {
-  var result = num1 + num2;
-  return result;
+var number1 = prompt("enter first");
+var number2 = prompt("enter Second");
+function showPower(num1, num2) {
+  return num1 ** num2;
 }
-var sumResult = sumNumbers(2, 6);
-alert("sumResult is:" + sumResult);
+var powerResult = showPower(number1, number2);
+alert("power resultis" + "" + powerResult);
