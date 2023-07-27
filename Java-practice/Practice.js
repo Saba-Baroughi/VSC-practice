@@ -1,11 +1,6 @@
-function sumValue(num1, num2) {
-  if (num1 == undefined) {
-    num1 = 1;
-  }
-  if (num2 == undefined) {
-    num2 = 2;
-  }
+function sumNumbers(num1, num2) {
   var result = num1 + num2;
-  alert("result" + ":" + result);
+  return result;
 }
-sumValue(2);
+var sumResult = sumNumbers(2, 6);
+alert("sumResult is:" + sumResult);
