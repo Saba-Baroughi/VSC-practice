@@ -1,19 +1,6 @@
-// let input = prompt("enter a number:");
-// if (input % 2 == 0) {
-//   function result() {
-//     alert("even");
-//   }
-// } else {
-//   function result() {
-//     alert("odd");
-//   }
-// }
-// result();
-function isOddOrEven(number) {
-  if (number % 2 == 0) {
-    alert(number + ":" + "is even");
-  } else {
-    alert(number + "is odd");
-  }
+function average(num1, num2, num3) {
+  var sum = num1 + num2 + num3;
+  var result = sum / 3;
+  alert(result);
 }
-isOddOrEven(14);
+average(2, 5, 4);
