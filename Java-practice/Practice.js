@@ -1,5 +1,4 @@
-function showTwoNumbers(firstNumber, secondNumber) {
-  alert("fisrt parameter:" + firstNumber);
-  alert("second Number:" + secondNumber);
+function showmessage(from, text) {
+  alert(from + ":" + text);
 }
-showTwoNumbers(23, 34);
+showmessage("saba", "hello");
