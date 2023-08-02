@@ -1,7 +1,7 @@
-var number1 = prompt("enter first");
-var number2 = prompt("enter Second");
-function showPower(num1, num2) {
-  return num1 ** num2;
+var userName = prompt("Enter your username:");
+var passWord = prompt("Enter your password");
+if (userName.length < 3 || passWord.length < 8) {
+  alert("Characters should be at least 3 and password should be 8 characters");
+} else {
+  alert("sign in");
 }
-var powerResult = showPower(number1, number2);
-alert("power resultis" + "" + powerResult);
