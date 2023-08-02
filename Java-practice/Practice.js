@@ -1,7 +1,6 @@
-var userName = prompt("Enter your username:");
-var passWord = prompt("Enter your password");
-if (userName.length < 3 || passWord.length < 8) {
-  alert("Characters should be at least 3 and password should be 8 characters");
+var userName = prompt("Enter username:");
+if (userName.toLowerCase() == "ali") {
+  alert("Sign in");
 } else {
-  alert("sign in");
+  alert("Could not enter");
 }
