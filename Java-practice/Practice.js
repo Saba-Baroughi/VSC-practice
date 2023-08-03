@@ -1,3 +1,5 @@
-for (var n = 0; n < 100; n = n + 2) {
-  console.log(n);
+var allPrice = 0;
+for (i = 0; i < 5; i++) {
+  var allPrice = allPrice + Number(prompt("Enter the price"));
 }
+alert("all of your basket:" + allPrice);
