@@ -1,4 +1,3 @@
-var userName = "Amir Hossein";
-for (var i = 0; i < userName.length; i++) {
-  console.log(userName[i]);
+for (var n = 0; n < 100; n = n + 2) {
+  console.log(n);
 }
