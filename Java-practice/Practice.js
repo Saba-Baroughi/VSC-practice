@@ -1,2 +1,3 @@
-var firstRandomNumber = math.random() * 100000;
-console.log(firstRandomNumber);
+var firstRandomCode = Math.random() * 1000000;
+var firstCaptchaCode = Math.floor(firstRandomCode);
+console.log("Your captcha code:", firstCaptchaCode);
