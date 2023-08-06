@@ -1,5 +1,6 @@
-var allPrice = 0;
-for (i = 0; i < 5; i++) {
-  var allPrice = allPrice + Number(prompt("Enter the price"));
+var sum = 0;
+for (var n = 0; n < 5; n++) {
+  sum = sum + Number(prompt("Enter the" + (n + 1) + "Number"));
 }
-alert("all of your basket:" + allPrice);
+var average = sum / 5;
+alert("the averageis:" + average);
