@@ -1,14 +1,8 @@
-var userNumber = Number(prompt("Enter The Numnber", 0));
-var counter = 0;
-if (userNumber == 0) {
-  counter = 1;
-} else if (isNaN(userNumber)) {
-  alert("enter the number");
-} else {
-  for (var i = 0; userNumber / 10 != 0; i++) {
-    counter++;
-    userNumber = Math.floor(userNumber / 10);
-  }
+var i = 0;
+var sum = 0;
+while (i < 5) {
+  i++;
+  var userNumber = Number(prompt("Enter a number:", 0));
+  sum = sum + userNumber;
 }
-
-alert(counter);
+alert("Average is:" + sum / 5);
