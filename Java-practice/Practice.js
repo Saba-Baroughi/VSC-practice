@@ -1,9 +1,14 @@
-var userNumber = Number(prompt("Enter a Number?", 0));
-var i = 0;
-var counter = 0;
-while (userNumber / 10 != 0) {
-  counter++;
-  userNumber = Math.floor(userNumber / 10);
-  i++;
+var userFirstNumber = Number(prompt("Enter First Number?", 0));
+var userSecondNumber = Number(prompt("Enter Second Number?", 0));
+if (userFirstNumber % 2 === 0) {
+  while (userFirstNumber < userSecondNumber) {
+    console.log(userFirstNumber);
+    userFirstNumber += 2;
+  }
+} else {
+  userFirstNumber++;
+  while (userFirstNumber < userSecondNumber) {
+    console.log(userFirstNumber);
+    userFirstNumber += 2;
+  }
 }
-alert(counter);
