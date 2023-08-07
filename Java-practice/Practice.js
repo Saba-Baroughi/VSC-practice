@@ -1,8 +1,9 @@
+var userNumber = Number(prompt("Enter a Number?", 0));
 var i = 0;
 var sum = 0;
-while (i < 5) {
+while (userNumber / 10 != 0) {
+  sum = sum + (userNumber % 10);
+  userNumber = Math.floor(userNumber / 10);
   i++;
-  var userNumber = Number(prompt("Enter a number:", 0));
-  sum = sum + userNumber;
 }
-alert("Average is:" + sum / 5);
+alert("the sum is" + +sum);
