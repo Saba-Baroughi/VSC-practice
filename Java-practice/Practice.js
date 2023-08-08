@@ -1,13 +1,7 @@
-var userNumber = 0;
-var sum = 0;
-var counter = 0;
-while (userNumber != -1) {
-  sum += userNumber;
-  userNumber = Number(
-    prompt("Enter the number\n\nIf you have not a number to add, Enter -1")
-  );
-  if (userNumber != -1) {
-    counter++;
-  }
+var userFirst = Number(prompt("enter first number"));
+var userSecond = Number(prompt("enter second number"));
+var power = 1;
+for (var i = 0; i < userSecond; i++) {
+  power = power * userFirst;
 }
-console.log("average" + " ", sum / counter);
+alert("Power:" + power);
