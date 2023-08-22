@@ -1,7 +1,4 @@
-var data = [
-  { id: 1, name: "statusbar", family: "bonab" },
-  { id: 2, name: "arash", family: "nasl" },
-];
-data.forEach(function (users) {
-  console.log("name:" + users.name + " " + "family:" + users.family);
-});
+var userName = prompt("Enter your name:");
+var users = ["saba", "shahin", "ali"];
+var isLogIn = users.includes(userName.toLowerCase());
+console.log(isLogIn);
