@@ -1,5 +1,5 @@
 var ages = [34, 35, 12];
-ages.every(function (age) {
-  console.log(age);
-  return true;
+var isAll = ages.every(function (age) {
+  return age > 18;
 });
+console.log(isAll);
