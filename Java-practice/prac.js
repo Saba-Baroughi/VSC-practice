@@ -2,7 +2,7 @@ var allProducts = [
   { id: 1, name: "laptop", price: 17000000 },
   { id: 2, name: "phone", price: 7000000 },
   { id: 3, name: "milk", price: 35000 },
-  { id: 4, name: "pen", price: 12000 },
+  { id: 4, name: "pa", price: 12000 },
   { id: 5, name: "pencil", price: 9000 },
   { id: 6, name: "cable", price: 55000 },
   { id: 7, name: "water", price: 6000 },
