@@ -1,6 +1,10 @@
-var users = ["saba", "memo", "arash", "heso", "majid"];
+var users = [
+  { id: 1, name: "saba", age: 23 },
+  { id: 2, name: "seda", age: 67 },
+  { id: 3, name: "seme", age: 83 },
+  { id: 4, name: "sibel", age: 43 },
+];
 var userIndex = users.findIndex(function (user) {
-  console.log(user);
-  return user == "arash";
+  return user.name == "sibel";
 });
-console.log(userIndex);
+console.log("index:" + userIndex);
