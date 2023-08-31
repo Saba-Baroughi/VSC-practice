@@ -7,14 +7,12 @@ var userBasket = [
   { id: 6, name: "table", price: 80 },
 ];
 var filterPrices = userBasket.filter(function (products) {
-  return products.price > 100;
+  return products.price < 100;
 });
 var sumProducts = 0;
-var sumBasket = userBasket.map(function (sumItems) {
-  return (sumProducts = sumProducts + sumItems.price);
+var sumBasket = userBasket.forEach(function (sumItems) {
+  sumProducts = sumProducts + sumItems.price;
 });
-console.log(sumBasket[5]);
-var numbersPost = userBasket.length - filterPrices.length;
-var post = numbersPost * 2;
-var lastPrice = sumBasket[sumBasket.length - 1] + post;
+var post = filterPrices.length * 2;
+lastPrice = sumProducts + post;
 console.log(lastPrice);
