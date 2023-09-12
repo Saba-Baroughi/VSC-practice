@@ -1,44 +1,37 @@
-var allProducts = [
-  { id: 1, name: "laptop", price: 17000000 },
-  { id: 2, name: "phone", price: 7000000 },
-  { id: 3, name: "milk", price: 35000 },
-  { id: 4, name: "pen", price: 12000 },
-  { id: 5, name: "pencil", price: 9000 },
-  { id: 6, name: "cable", price: 55000 },
-  { id: 7, name: "water", price: 6000 },
-  { id: 8, name: "soft drink", price: 13000 },
+var todosArray = [
+  { id: 1, title: "learn js", isDoing: false },
+  { id: 2, title: "make footer", isDoing: true },
+  { id: 3, title: "design", isDoing: false },
+  { id: 4, title: "vue js", isDoing: false },
 ];
 
-var userBasket = [
-  { id: 1, name: "milk", price: 35000 },
-  { id: 2, name: "water", price: 6000 },
-];
-var userRequest = prompt("1. Add Product \n 2. Remove product");
-if (userRequest === "1") {
-  var userProductName = prompt("Enter any item");
-  var productData;
-  var isInShop = allProducts.some(function (products) {
-    if ((products.name = userProductName)) {
-      productData = products;
+var userMenu = prompt(
+  "Choose one of them: \n 1. Add Todo \n 2. Remove Todo \n 3. Do Todo"
+);
+if (userMenu === "1") {
+  var newTodoName = prompt("Enter The New Todo Name: ", "");
+  var newTodoObject = {
+    id: 5,
+    title: newTodoName,
+    isDoing: false,
+  };
+  todosArray.push(newTodoObject);
+  console.log(todosArray);
+} else if (userMenu === "2") {
+  var removeTodoName = prompt("Enter The New Todo Name: ", "");
+  var removableTodoIndex = todosArray.findIndex(function (works) {
+    return works.title === removeTodoName;
+  });
+  todosArray.splice(removableTodoIndex, 1);
+  console.log(todosArray);
+} else if (userMenu === "3") {
+  var editableTodoName = prompt("Enter The Editable Todo Name: ", "");
+  todosArray.forEach(function (todo) {
+    if (todo.title === editableTodoName) {
+      todosArray.isDoing = true;
     }
-    return true;
   });
-  if (isInShop === true) {
-    var newProduct = {
-      id: 3,
-      name: productData.name,
-      price: productData.price,
-    };
-  }
-  userBasket.push(newProduct);
-  console.log(userBasket);
-} else if (userRequest === "2") {
-  var userProductName = prompt("Enter the item wanted to remove");
-  var userIndex = userBasket.findIndex(function (products) {
-    return products.name === userProductName;
-  });
-  userBasket.splice(userIndex, 1);
-  console.log(userBasket);
+  console.log(todosArray);
 } else {
-  alert("Enter 1 or 2");
+  alert("Enter the correct option");
 }
