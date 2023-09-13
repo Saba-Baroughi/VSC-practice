@@ -8,8 +8,9 @@ var allQuestions = [
   { id: 7, title: "Cpaital Of Iran?", answer: "tehran" },
 ];
 var score = 0;
+var mainAnswers = " "; //to avoid write the variable inside the loop, define var outside
 allQuestions.forEach(function (question) {
-  var mainAnswers = prompt(question.title + "?");
+  mainAnswers = prompt(question.title + "?");
   if (mainAnswers === question.answer) {
     score++;
   }
