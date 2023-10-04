@@ -14,3 +14,6 @@ for (let i = 0; i < 1000000; i++) {
 }
 
 document.getElementById("alsoInvadeThisSpace").textContent = result;
+function consoleInvader() {
+  console.log("👾");
+}
